@@ -29,3 +29,9 @@ for (let i = 0; i < surnameList.length; i++){
 
 }
 
+// add the array elements to an ordered list in the html document
+for ( i=0; i < surnameList.length; i++){
+
+    document.getElementById('ms_surname-list').innerHTML += '<li>' + surnameList[i] + '</li>';
+
+}
