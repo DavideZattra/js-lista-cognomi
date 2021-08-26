@@ -7,20 +7,24 @@
 *
 */
 
-
+// array and variables definition
 let surnameList = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
 let userSurname;
 
+// user surname inpit
 userSurname = prompt("Inserisci il tuo cognome");
 
+// transforming user input with capitalization
 surnameList.push(userSurname.charAt(0).toUpperCase() + userSurname.substr(1).toLowerCase());
 
+// sorting the array in alphabetical order
 surnameList.sort()
 
 console.log(surnameList)
 
 for (let i = 0; i < surnameList.length; i++){
 
+    // humanizing the list and display
     console.log( (surnameList.indexOf(surnameList[i]) + 1) + ' ' + surnameList[i])
 
 }
